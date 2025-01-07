@@ -1,105 +1,107 @@
-label {
-    margin-left: 20px;
-
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-input {
-
-    margin-left: 80px;
+.table-div {
+    width: 80%;
+    margin: 20px auto;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-#fname,
-#lname,
-.day,
-.month,
-.year,
-#email,
-#number,
-#male,
-#female,
-#city,
-#pincode,
-#state,
-#country,
-.hobbies,
-#qualification,
-#courses {
-    margin-bottom: 20px;
-}
-
-#dob {
-    margin-right: 0%;
-}
-
-span {
-    margin-left: 20px;
-    ;
-}
-
-#city,
-#fname {
-    margin-top: 20px;
-}
-
-
 
 h2 {
-    color: blueviolet;
     text-align: center;
+    margin-bottom: 20px;
+    color: blueviolet;
 }
 
-form {
-    background-color: blueviolet;
-    width: 80%;
-    margin-left: 10%;
-    color: azure;
-    height: 800px;
-}
 
 table {
-    text-align: center;
-    margin-left: 20%;
-
-}
-
-#address {
-    margin-left: 80px;
-}
-
-.day {
-    margin-left: 80px;
-
-}
-
-#drawing,
-#singing,
-#dancing,
-#others {
-    margin-left: auto !important;
-}
-
-.hobbies {
-    margin-right: 15%;
-    margin-bottom: 20px;
-}
-
-.male,
-#courses {
-    margin-left: 80px;
-}
-
-#male,
-#female,
-#bca,
-#bsc,
-#ba {
-    margin-left: 0%;
-}
-
-#others {
-    margin-bottom: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
 }
 
 td {
-    margin: 0% !important;
+    padding: 10px;
+    vertical-align: top;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+}
+
+textarea {
+    resize: none;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #4a4aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3a3adc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    td {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 8px;
+    }
 }
